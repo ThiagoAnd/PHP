@@ -1,0 +1,25 @@
+<!DOCTYPE>
+	<html>
+		<head>
+			<title>Cadastro Carro</title>
+			<link rel="stylesheet" type= "text/css" href="style.css"/>
+			<script >
+				function condicao(){
+				document.formulario.action="InserirCarro.php";
+				document.formulario.target="iframe1";
+				document.formulario.submit();
+				}
+			</script>
+		</head>
+		<body style=" background-color:#444 ">
+			<h1 style="margin-left:26% "></br>Cadastro de Carro</h1></br></br>
+			<form method="POST" name="formulario" >
+			<input type = "text" placeholder="Digite o modelo" name ="modelo" required style="margin-left:34%"/> </br></br>
+			<input type = "text" placeholder="Digite a marca" name = "marca"required style="margin-left:34%"/></br></br>
+			<input type = "text" placeholder="Digite o ano" name = "ano"required style="margin-left:34%"/></br></br>
+			<input type = "text" placeholder="Digite o chassi" name = "chassi"required style="margin-left:34%"/></br></br>
+			<input type = "text" placeholder="Digite o tipo" name = "tipo"required style = "margin-left:34%"/></br></br>
+			<input type ="submit" value= "Enviar" onclick="condicao();" style="margin-left:42% "/>
+			</form>
+		</body>
+	</html>
