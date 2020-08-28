@@ -1,0 +1,25 @@
+<!DOCTYPE>
+	<html>
+		<head>
+			<title>Cadastro Curso</title>
+			<link rel="stylesheet" type= "text/css" href="style.css"/>
+			<script >
+				function condicao(){
+				document.formulario.action="InserirCurso.php";
+				document.formulario.target="iframe1";
+				document.formulario.submit();
+				}
+			</script>
+		</head>
+		<body style=" background-color:#fff ">
+			<h1 style="margin-left:26% "></br>Cadastro de Curso</h1></br></br>
+			<form method="POST" name="formulario" >
+			<input type = "text" placeholder="Digite o nome do curso" name ="nome" required style="margin-left:34%"/> </br></br>
+			<input type = "text" placeholder="Digite o turno" name = "turno" required style="margin-left:34%"/></br></br>
+			<input type = "text" placeholder="Digite a carga horaria" name = "c_horaria" required style="margin-left:34%"/></br></br>
+			<input type = "text" placeholder="Digite o quantidade de alunos" name = "qtd_alunos" required style="margin-left:34%"/></br></br>
+			<input type = "text" placeholder="Digite o nome do professor" name = "professor"required style = "margin-left:34%"/></br></br>
+			<input type ="submit" value= "Enviar" onclick="condicao();" style="margin-left:42% "/>
+			</form>
+		</body>
+	</html>

@@ -1,0 +1,1 @@
+É feito um cadastro, usando o md5 para criptografar
